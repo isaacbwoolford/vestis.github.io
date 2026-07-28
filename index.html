@@ -1,58 +1,253 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vestis — AI Virtual Try-On</title>
+  <meta name="description" content="Vestis is an AI-powered virtual try-on app that lets you instantly see how clothing looks on you before purchasing online.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://isaacbwoolford.github.io/vestis.github.io/">
 
-<title>Vestis</title>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vestis">
+  <meta property="og:title" content="Vestis — AI Virtual Try-On">
+  <meta property="og:description" content="See yourself before you buy. Vestis uses AI to show how clothing looks on you before you purchase online.">
+  <meta property="og:url" content="https://isaacbwoolford.github.io/vestis.github.io/">
+  <meta property="og:image" content="https://isaacbwoolford.github.io/vestis.github.io/assets/og-image.png">
 
-<link rel="stylesheet" href="styles.css">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vestis — AI Virtual Try-On">
+  <meta name="twitter:description" content="See yourself before you buy. AI-powered virtual try-on for online shopping.">
+  <meta name="twitter:image" content="https://isaacbwoolford.github.io/vestis.github.io/assets/og-image.png">
 
-<meta charset="UTF-8">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/favicon-32.png">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <a class="sr-only" href="#main">Skip to content</a>
 
-<nav>
+  <header class="site-header" id="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html" aria-label="Vestis home">
+        <span class="logo-mark" aria-hidden="true">V</span>
+        <span>Vestis</span>
+      </a>
 
-<a href="index.html">Home</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
 
-<a href="privacy.html">Privacy</a>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#why-vestis">Why Vestis</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<a href="terms.html">Terms</a>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-atmosphere" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="brand-lockup">
+            <span class="logo-mark" aria-hidden="true">V</span>
+            <span class="brand-name">Vestis</span>
+          </div>
+          <h1 id="hero-heading" class="hero-title">See Yourself Before You Buy.</h1>
+          <p class="hero-subtitle">
+            Vestis is an AI-powered virtual try-on app that lets you instantly see how clothing looks on you before purchasing online.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#coming-soon">Coming Soon</a>
+            <a class="btn btn-secondary btn-lg" href="contact.html">Contact Us</a>
+          </div>
+        </div>
 
-<a href="contact.html">Contact</a>
+        <div class="phone-section" id="coming-soon">
+          <div class="phone-glow" aria-hidden="true"></div>
+          <div class="phone-frame" role="img" aria-label="Vestis app phone mockup placeholder for future screenshots">
+            <div class="phone-notch" aria-hidden="true"></div>
+            <div class="phone-screen">
+              <div class="phone-status" aria-hidden="true">
+                <span>9:41</span>
+                <span>●●●</span>
+              </div>
+              <div class="phone-app" aria-hidden="true">
+                <div class="phone-app-header">
+                  <span>Virtual Try-On</span>
+                  <strong>Your look, previewed</strong>
+                </div>
+                <div class="try-on-stage"></div>
+                <div class="phone-chips">
+                  <div class="phone-chip is-active">Outfit</div>
+                  <div class="phone-chip">Fit</div>
+                  <div class="phone-chip">Shop</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="phone-placeholder-note">App preview — screenshots coming soon</p>
+        </div>
+      </div>
+    </section>
 
-</nav>
+    <section class="section section-muted" id="how-it-works" aria-labelledby="how-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">How it works</p>
+          <h2 id="how-heading" class="section-title">Try on in three steps</h2>
+          <p class="section-desc">Upload a photo, preview any outfit, and shop knowing how it will look on you.</p>
+        </header>
 
-<div class="hero">
+        <div class="steps-grid">
+          <article class="step-card reveal reveal-delay-1">
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                <circle cx="12" cy="13" r="4"/>
+              </svg>
+            </div>
+            <p class="step-number">Step 01</p>
+            <h3>Upload a Photo</h3>
+            <p>Add a clear full-body or upper-body photo so Vestis can understand your proportions and pose.</p>
+          </article>
 
-<h1>Vestis</h1>
+          <article class="step-card reveal reveal-delay-2">
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.46a1 1 0 0 0 .99.85H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.85l.58-3.46a2 2 0 0 0-1.34-2.23z"/>
+              </svg>
+            </div>
+            <p class="step-number">Step 02</p>
+            <h3>Try On Any Outfit</h3>
+            <p>Choose clothing from inspiration images or product photos and see an AI-generated try-on preview on you.</p>
+          </article>
 
-<h2>See Yourself Before You Buy.</h2>
+          <article class="step-card reveal reveal-delay-3">
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+              </svg>
+            </div>
+            <p class="step-number">Step 03</p>
+            <h3>Shop With Confidence</h3>
+            <p>Decide with a clearer sense of fit and style before you check out—fewer returns, better choices.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<p>
+    <section class="section" id="why-vestis" aria-labelledby="why-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Why Vestis</p>
+          <h2 id="why-heading" class="section-title">Built for how you shop online</h2>
+          <p class="section-desc">A focused virtual try-on experience designed to feel fast, realistic, and effortless.</p>
+        </header>
 
-Vestis is an AI-powered virtual try-on app that helps you see how clothing looks on you before purchasing online.
+        <div class="features-grid">
+          <article class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/>
+                <path d="M16 10v1a4 4 0 0 1-8 0v-1"/>
+                <path d="M8.5 15.5c.8 1.3 2 2.5 3.5 2.5s2.7-1.2 3.5-2.5"/>
+                <path d="M4 22h16"/>
+              </svg>
+            </div>
+            <h3>AI Virtual Try-On</h3>
+            <p>Advanced image models generate try-on previews so you can visualize clothing on your own photo—not a generic avatar.</p>
+          </article>
 
-</p>
+          <article class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"/>
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 3v2M12 19v2M3 12h2M19 12h2"/>
+              </svg>
+            </div>
+            <h3>See Yourself Before Buying</h3>
+            <p>Bridge the gap between product photos and reality. Preview how a piece might look on you before you commit.</p>
+          </article>
 
-<a class="button" href="mailto:thegreatestfashionapp@gmail.com">
+          <article class="feature-card reveal reveal-delay-3">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7" rx="1.5"/>
+                <rect x="14" y="3" width="7" height="7" rx="1.5"/>
+                <rect x="3" y="14" width="7" height="7" rx="1.5"/>
+                <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+              </svg>
+            </div>
+            <h3>Works With Any Outfit Inspiration</h3>
+            <p>Bring in outfit ideas from across the web—including sources like Pinterest—and try them on your photo.</p>
+          </article>
 
-Contact Us
+          <article class="feature-card reveal reveal-delay-4">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <h3>Fast &amp; Realistic</h3>
+            <p>Designed for quick previews with results that aim to feel natural—so trying on feels closer to standing in a fitting room.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-</a>
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div class="cta-band-bg" aria-hidden="true"></div>
+      <div class="container reveal">
+        <h2 id="cta-heading">The fitting room, reimagined.</h2>
+        <p>Vestis is launching soon. Reach out if you’d like early access or partnership updates.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="contact.html">Get in touch</a>
+          <a class="btn btn-secondary btn-lg" href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-</div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a class="logo" href="index.html" aria-label="Vestis home">
+            <span class="logo-mark" aria-hidden="true">V</span>
+            <span>Vestis</span>
+          </a>
+          <p>AI-powered virtual try-on for smarter online shopping.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="index.html">Home</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Vestis</p>
+        <p>Built for the future of fashion.</p>
+      </div>
+    </div>
+  </footer>
 
-<footer>
-
-© 2026 Vestis
-
-</footer>
-
+  <script src="script.js" defer></script>
 </body>
-
 </html>
